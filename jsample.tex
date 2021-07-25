@@ -43,19 +43,16 @@ Department of Computer Science, Graduate School of Systems and Information Engin
 
 
 \begin{jkeyword}
-情報処理学会論文誌ジャーナル，\LaTeX，スタイルファイル，べからず集
+実戦共同体，CSCW，PBL，情報可視化
 \end{jkeyword}
 
 \begin{eabstract}
-This document is a guide to prepare a draft for submitting to IPSJ
-Journal, and the final camera-ready manuscript of a paper to appear in
-IPSJ Journal, using {\LaTeX} and special style files.  Since this
-document itself is produced with the style files, it will help you to
-refer its source file which is distributed with the style files.
+In this study, we have developed a system that visualizes the process of participation of different community of practice in application development.
+In the past, the authors used the concept of Community of Practice (CoP) from the perspective of a qualitative approach, and how the relationships between project members with different backgrounds affect the applications being developed. I did a study. Based on the research results, we developed a system that visualizes the involvement of project members with different backgrounds in the process of application development from the viewpoint of CSCW (Computer Supported Cooperative Work). By using this system, the purpose is to support the design of the application from the way of building relationships between the members in the application development team in which members with different backgrounds participate.
 \end{eabstract}
 
 \begin{ekeyword}
-IPSJ Journal, \LaTeX, style files, ``Dos and Don'ts'' list
+Community of Practice, CSCW, PBL, Data Visualization
 \end{ekeyword}
 
 \maketitle
@@ -95,7 +92,7 @@ CSCWへの研究の発展に大きな貢献をしたサッチマンであった�
  アプリ開発支援ソフトウェアは，Atlassia社が提供するプロジェクトのタスク管理をするた めのオンラインツールである「Trello」と連携して開発されたものである.Trelloが提供する API(Application Programming Interface)を使用して，Trelloのタスクが持つデータを抽出 し，グラフ構造として可視化する.この可視化機能により分業的，あるいは協働的にタスクを こなしているかを確認しながら，アプリ開発を行えるような想定をしている(図1).アプリ開 発支援ソフトウェアは，CoPの概念を参考に設計されており，「正統的周辺参加」をTrelloの カードの移動，プロジェクトのタスクがどの共同体に属しいてるかをTrelloのラベル機能を用 いて表す.
 
 
-\section{本システムと概念の対応関係}
+\section{本システムについて}
 \label{system-map}
 
 本システムでは，
@@ -124,7 +121,7 @@ CSCWへの研究の発展に大きな貢献をしたサッチマンであった�
 プロジェクトメンバーの関係性の変化を観察することを可能にしている．
 これにより，ノードの軌跡から，
 進行状況によって変化していく，
-プロジェクトメンバーのトラジェクトリーを観察することを可能にしている．
+プロジェクトメンバーの軌跡を観察することを可能にしている．
 
 % \begin{enumerate}
 %    \item CoP
@@ -136,18 +133,15 @@ CSCWへの研究の発展に大きな貢献をしたサッチマンであった�
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{img/cop-map-graph.eps}
-  \caption{プロジェクトメンバーの関係性を可視化した様子}
+  \caption{本システムによってプロジェクトメンバーの関係性を可視化した様子}
   \label{cop-map-graph}
 \end{figure}
 
-\section{本システムの実装}
-\label{implementation}
-
-本システムは，アプリケーションサーバとデータベース，
-外部サービスであるTrelloから構成されている．
-
-タスクの履歴を，TrelloのWeb APIから取得して，
-時系列順にネットワーク構造に整形することで可視化している．
+% 本システムは，アプリケーションサーバとデータベース，
+% 外部サービスであるTrelloから構成されている．
+%
+% タスクの履歴を，TrelloのWeb APIから取得して，
+% 時系列順にネットワーク構造に整形することで可視化している．
 
 %4
 \section{今後の展望}
