@@ -11,3 +11,8 @@ http://www.ipsj.or.jp/kenkyukai/genko.html
 ### GitHub Actionsを使ったビルド
 
 - https://zenn.dev/ganariya/articles/platex-github-action
+
+# MEMO
+
+- 可視化手法の新規性
+- 一節つかってグラフ構造にした理由を語る
