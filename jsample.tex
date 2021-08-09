@@ -265,13 +265,6 @@ PBL授業では，アプリの実装が完了した後で，
 \section{実践共同体の可視化システムについて}
 \label{system-map}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{img/cop-map-graph-trim.eps}
-  \caption{本システムによってプロジェクトメンバーの関係性を可視化した様子}
-  \label{cop-map-graph}
-\end{figure}
-
 図\ref{cop}と図\ref{overlap}で示したように，
 従来までの実践共同体と参加者の関係性は，
 ベン図の様な形で表されてきた．
@@ -285,6 +278,13 @@ xxxを表現するには適していないと考えられる．
 xxxを可能にした．
 本システムによって可視化したプロジェクトメンバの関係性を，
 図\ref{cop-map-graph}に示す．
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/cop-map-graph.eps}
+  \caption{本システムによってプロジェクトメンバーの関係性を可視化した様子}
+  \label{cop-map-graph}
+\end{figure}
 
 本システムは，
 Atlassian社が提供するタスク管理ツールTrello\cite{trello}と連携して動作する．
@@ -305,6 +305,15 @@ Web APIを使って取得することで，
 協働でタスクを行っている様子を観察することを可能にしている．
 これにより，異なる色のノードがエッジでつながっている様子から，
 布置を観察することを可能にしている．
+本システムによって観察される布置の例を，
+図 \ref{cop-map-overlap}に示す．
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/cop-map-overlap.eps}
+  \caption{本システムによって可視化された布置}
+  \label{cop-map-overlap}
+\end{figure}
 
 さらに，タスクを行った回数の合計値によってノードの大きさを変化させている．
 これにより，プロジェクトメンバが正統的周辺参加である可能性を観察することが可能である．
@@ -312,8 +321,15 @@ Web APIを使って取得することで，
 この場合は，観察対象となるプロジェクトメンバは，
 タスクを行った回数は少ないが，
 リソースへのアクセスが可能な状態だと考える事ができる．
-% よって，現在は正統的周辺参加だが，
-% プロジェクトの進行状況によっては十全参加に移行する可能性もあると考えられる．
+本システムによって，
+観察される正統的周辺参加である可能性のあるプロジェクトメンバーを図\ref{cop-map-lpp}に示す．
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/cop-map-lpp.eps}
+  \caption{本システムによって観察される正統的周辺参加である可能性のあるプロジェクトメンバー}
+  \label{cop-map-lpp}
+\end{figure}
 
 以上のネットワーク構造を，プロジェクトの時系列順に変化させることで，
 プロジェクトメンバの関係性の変化を観察することを可能にしている．
