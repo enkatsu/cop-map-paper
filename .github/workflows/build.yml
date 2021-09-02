@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - actions
+      - main
 jobs:
   test_job:
     runs-on: ubuntu-latest
