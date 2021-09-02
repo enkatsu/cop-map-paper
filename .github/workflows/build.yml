@@ -1,7 +1,7 @@
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - actions
 jobs:
   test_job:
     runs-on: ubuntu-latest
