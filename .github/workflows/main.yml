@@ -4,7 +4,8 @@ on:
       - main
       - actions
 jobs:
-  - name: Compile Tex File
+  build:
+    name: Compile Tex File
     id: compile_tex_file
     uses: tsukuba-mas/platex-action@main
     with:
