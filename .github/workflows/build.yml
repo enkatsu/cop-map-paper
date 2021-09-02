@@ -1,11 +1,11 @@
+name: build
 on:
   push:
     branches:
-      - main
       - actions
 jobs:
-  build:
-    name: Compile Tex File
+  build_latex:
+    name: build-latex
     id: compile_tex_file
     uses: tsukuba-mas/platex-action@main
     with:
