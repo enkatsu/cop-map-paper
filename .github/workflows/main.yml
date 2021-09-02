@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - main
+      - actions
+jobs:
+  - name: Compile Tex File
+    id: compile_tex_file
+    uses: tsukuba-mas/platex-action@main
+    with:
+      LATEX_FILE_NAME: "wiss/wiss_template.tex"
