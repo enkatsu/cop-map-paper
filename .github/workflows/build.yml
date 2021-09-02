@@ -13,9 +13,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Compile Tex File
         id: compile_tex_file
-        uses: tsukuba-mas/platex-action@main
+        uses: enkatsu/platex-action@main
         with:
-          LATEX_FILE_NAME: "wiss/wiss_template.tex"
+          DIRECTORY: "wiss"
+          LATEX_FILE_NAME: "wiss_template.tex"
       # Create Release
       - name: Create Release
         id: create_release
