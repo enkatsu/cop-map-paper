@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="false"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5049437"
-     inkscape:cx="514.90889"
-     inkscape:cy="373.30894"
+     inkscape:zoom="0.30869716"
+     inkscape:cx="453.51892"
+     inkscape:cy="79.365811"
      inkscape:window-width="1366"
      inkscape:window-height="723"
      inkscape:window-x="0"
@@ -166,34 +166,35 @@
        style="stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1185)"
-       d="M 120.56983,106.18994 106.74301,79.642458"
-       id="path869" />
+       d="M 120.56983,106.18994 92.595398,70.734698"
+       id="path869"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1185-0)"
-       d="M 207.39283,106.28173 206.83976,74.203522"
+       d="m 205.82087,147.15262 0.14318,39.97879"
        id="path869-2"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.7px;line-height:1.25;font-family:'Hiragino Kaku Gothic Pro';-inkscape-font-specification:'Hiragino Kaku Gothic Pro, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="20.463688"
-       y="73.558662"
+       x="8.9359999"
+       y="63.556297"
        id="text1525"><tspan
          sodipodi:role="line"
          id="tspan1523"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.7px;font-family:'Hiragino Kaku Gothic Pro';-inkscape-font-specification:'Hiragino Kaku Gothic Pro, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="20.463688"
-         y="73.558662">プロジェクトメンバ</tspan></text>
+         x="8.9359999"
+         y="63.556297">プロジェクトメンバ</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.7px;line-height:1.25;font-family:'Hiragino Kaku Gothic Pro';-inkscape-font-specification:'Hiragino Kaku Gothic Pro, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="177.5363"
-       y="64.709496"
+       x="139.40707"
+       y="201.79048"
        id="text2788"><tspan
          sodipodi:role="line"
-         id="tspan2786"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.7px;font-family:'Hiragino Kaku Gothic Pro';-inkscape-font-specification:'Hiragino Kaku Gothic Pro, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="177.5363"
-         y="64.709496">協働作業の履歴</tspan></text>
+         x="139.40707"
+         y="201.79048"
+         id="tspan6684">協力して作業を行った履歴</tspan></text>
   </g>
 </svg>
