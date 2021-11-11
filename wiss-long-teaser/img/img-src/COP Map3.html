@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>COP Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://127.0.0.1:5500/assets/favicon/favicon.ico" type="image/vnd.microsoft.ico">
+    <link rel="stylesheet" href="COP%20Map3_files/bootstrap.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="COP%20Map3_files/index.css">
+    <script src="COP%20Map3_files/d3.js"></script>
+    <script src="COP%20Map3_files/jquery-3.js"></script>
+    <script src="COP%20Map3_files/popper.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="COP%20Map3_files/client.js"></script>
+    <script src="COP%20Map3_files/utils.js"></script>
+    <script src="COP%20Map3_files/trelloApiUtils.js"></script>
+    <script src="COP%20Map3_files/CopmapGraph.js"></script>
+    <script src="COP%20Map3_files/header.js"></script>
+    <script src="COP%20Map3_files/boards.js"></script>
+    <script src="COP%20Map3_files/sampleData.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <a class="navbar-brand" href="https://127.0.0.1:5500/">CoP Map</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li id="account-nav-item" class="nav-item dropdown">
+                
+        <a class="nav-link" id="trello-disable-auth-link" href="#">ログアウト</a>
+        </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <svg width="640" height="480" style="background-color: rgb(238, 238, 238);"><g class="links"><line class="link" stroke-width="1" stroke="black" x1="352.16939942806704" y1="206.01119702231514" x2="382.06607727817965" y2="201.73929493956888"></line><line class="link" stroke-width="1" stroke="black" x1="352.16939942806704" y1="206.01119702231514" x2="362.0836786027248" y2="225.23148270438372"></line><line class="link" stroke-width="1" stroke="black" x1="382.06607727817965" y1="201.73929493956888" x2="362.0836786027248" y2="225.23148270438372"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="413.01973659063526" y2="195.0249940596034"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="434.81426189617304" y2="171.0298284860838"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="434.81426189617304" y2="171.0298284860838"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="391.66798585890405" y2="180.77295669315902"></line><line stroke="black" x1="408.3034620260407" x2="377.26897313940856"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="398.701488124787" y2="208.59476588814462"></line><line class="link" stroke-width="1" stroke="black" x1="391.66798585890405" y1="180.77295669315902" x2="382.06607727817965" y2="201.73929493956888"></line><line class="link" stroke-width="1" stroke="black" x1="391.66798585890405" y1="180.77295669315902" x2="398.701488124787" y2="208.59476588814462"></line><line stroke-width="1" x1="363.7280719405504" y2="249.9361492666429"></line><line class="link" stroke-width="1" stroke="black" x1="413.01973659063526" y1="195.0249940596034" x2="444.25239722634694" y2="202.67642708389934"></line><line class="link" stroke-width="1" stroke="black" x1="373.37408810821" y1="149.90881048924928" x2="391.66798585890405" y2="180.77295669315902"></line><line class="link" stroke-width="1" stroke="black" x1="373.37408810821" y1="149.90881048924928" x2="373.37408810821" y2="149.90881048924928"></line><line class="link" stroke-width="1" stroke="black" x1="391.66798585890405" y1="180.77295669315902" x2="373.37408810821" y2="149.90881048924928"></line><line stroke-width="1" stroke="black" y1="266.15453445861385" y2="283.5917699470481"></line></g><g class="nodes"><circle class="node" r="11" fill="#1f77b4" cx="413.01973659063526" cy="195.0249940596034"></circle><circle class="node" r="4" fill="#1f77b4" cx="434.81426189617304" cy="171.0298284860838"></circle><circle class="node" r="3" fill="#ff7f0e" cx="373.37408810821" cy="149.90881048924928"></circle><circle class="node" r="5" fill="#ff7f0e" cx="352.16939942806704" cy="206.01119702231514"></circle><circle class="node" r="8" fill="#ff7f0e" cx="391.66798585890405" cy="180.77295669315902"></circle><circle class="node" r="10" fill="#ff7f0e" cx="382.06607727817965" cy="201.73929493956888"></circle><circle class="node" r="4" fill="#1f77b4" cx="444.25239722634694" cy="202.67642708389934"></circle><circle class="node" r="5" fill="#ff7f0e" cx="362.0836786027248" cy="225.23148270438372"></circle><circle class="node" r="6" cx="398.701488124787" cy="208.59476588814462" fill="#1f77b4"></circle></g></svg>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
