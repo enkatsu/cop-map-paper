@@ -3,7 +3,45 @@ on:
     branches:
       - main
 jobs:
-  test_job:
+  # build_wiss:
+  #   runs-on: ubuntu-latest
+  #   name: Example of compiling pdf
+  #   steps:
+  #     # make pdf
+  #     # LATEX_FILE_NAME -> main.pdf generated
+  #     - name: Set up Git repository
+  #       uses: actions/checkout@v2
+  #     - name: Compile Tex File
+  #       id: compile_tex_file
+  #       uses: enkatsu/platex-action@main
+  #       with:
+  #         DIRECTORY: "wiss"
+  #         LATEX_FILE_NAME: "wiss_template.tex"
+  #     # Create Release
+  #     - name: Create Release
+  #       id: create_release
+  #       uses: actions/create-release@v1
+  #       env:
+  #         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  #       with:
+  #         tag_name: ${{github.ref}}-${{ github.sha }}
+  #         release_name: Release ${{ github.ref }}-${{ github.sha }}
+  #         body: |
+  #           Compiled PDF ${{github.ref}}-${{ github.sha }}
+  #         draft: false
+  #         prerelease: false
+  #     # Upload Asset main.pdf
+  #     - name: Upload Release Asset
+  #       id: upload_release_asset
+  #       uses: actions/upload-release-asset@v1
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       with:
+  #         upload_url: ${{ steps.create_release.outputs.upload_url }}
+  #         asset_path: ./wiss/wiss_template.pdf
+  #         asset_name: ${{ github.sha }}.pdf
+  #         asset_content_type: application/pdf
+  build_wiss_long_teaser:
     runs-on: ubuntu-latest
     name: Example of compiling pdf
     steps:
@@ -15,7 +53,7 @@ jobs:
         id: compile_tex_file
         uses: enkatsu/platex-action@main
         with:
-          DIRECTORY: "wiss"
+          DIRECTORY: "wiss-long-teaser"
           LATEX_FILE_NAME: "wiss_template.tex"
       # Create Release
       - name: Create Release
@@ -38,19 +76,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./wiss/wiss_template.pdf
+          asset_path: ./wiss-long-teaser/wiss_template.pdf
           asset_name: ${{ github.sha }}.pdf
           asset_content_type: application/pdf
-
-# name: build
-# on:
-#   push:
-#     branches:
-#       - actions
-# jobs:
-#   build_latex:
-#     name: build-latex
-#     id: compile_tex_file
-#     uses: tsukuba-mas/platex-action@main
-#     with:
-#       LATEX_FILE_NAME: "wiss/wiss_template.tex"
