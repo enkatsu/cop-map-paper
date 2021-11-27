@@ -236,7 +236,7 @@
  {\Large\bfseries\bfseries \@title%
 %   \copyrightnotice{\copyright~2006~日本ソフトウェア科学会ISS研究会．} \par} \vskip 3\p@
 %% begin of modify 2006/07/12 (akita)
-%   \copyrightnotice{Copyright is held by the author(s). This paper is nonrefereed and non-archival. Hence it may later appear in any journals, conferences, symposia, etc. } 
+\copyrightnotice{Copyright is held by the author(s). This paper is nonrefereed and non-archival. Hence it may later appear in any journals, conferences, symposia, etc. } 
    \par} \vskip 3\p@
 %% end of modify
  {\small\bfseries \@etitle \par}
