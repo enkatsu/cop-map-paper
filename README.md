@@ -17,4 +17,3 @@ https://www.wiss.org/WISS2021/
 WISS 2021ロングティザー発表用の原稿
 
 https://www.wiss.org/WISS2021/
-
